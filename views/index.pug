@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    title Radhika Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+               img(src="/static/img/logo.jpg")
+               | RDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+
+    section#introSection
+        div Welcome to Radhika's Dance Academy
+        div.small Eat Dance Sleep Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+           h3 Dance Perfection
+           div.card-box
+              div.card-img
+                  img(src="/static/img/1.png")
+              div.card-content
+                  p Over 170 Online Dance Classes with the world's best choreographers! New classes added every week!    
+        div.card
+           h3 Dance the way you like
+           div.card-box
+              div.card-img
+                  img(src="/static/img/2.png")
+              div.card-content
+                  p Regular dancing is great for losing weight, maintaining strong bones, improving posture and muscle strength, increasing balance and co-ordination, and beating stress
+
+        div.card
+           h3 Expert Teaching
+           div.card-box
+              div.card-img
+                  img(src="/static/img/3.png")
+              div.card-content
+                  p Learn to dance online from the world's best.Whether you like to jump or jive, tap or tango, shake your hips or your booty, dancing is 1 of the most enjoyable ways to get moving.
+    
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="/static/img/logo1.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo2.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo3.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo4.png", alt="Sponsor Image", class="spImage")
+
+    footer#footer
+        | Copyright 2020 &copy; www.radhikadanceacademy.com | All rights reserved!
+
+      
+    script
+      include ../static/index.js
